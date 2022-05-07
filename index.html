@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&amp;display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <!-- <script src="https://kit.fontawesome.com/87cc6afaeb.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/7463e0a8c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Porfolio</title>
 </head>
 
@@ -22,19 +23,24 @@
             <div class="navbar_logo"><img src="img/logo.png"
                     alt="https://dewey.tailorbrands.com/production/brand_version_mockup_image/366/7204079366_04e7c399-fab0-46cb-bfdc-77dd3a29c710.png?cb=1651494350">
             </div>
+            <div class="menu_burger_container">
+                <span id="bar1"></span>
+                <span id="bar2"></span>
+                <span id="bar3"></span>
+
+            </div>
             <ul class="navbar_menu">
-                <li id="about">About</li>
-                <li id="experience">Experience</li>
-                <li id="resume">Résumé</li>
-                <li id="contact">
-                    <button class="navbar_btn bg_danger">Contact</button>
+                <li id="about_link"><a href="#">About</a> </li>
+                <li id="experience_link"><a href="#">Experience</a> </li>
+                <li id="resume_link"> <a href="assets" download="resume.pdf" target="_blank">Résumé</a> </li>
+                <li id="contact_link"> <a href="mailto:toanlt3596@gmail.com" class="bg_danger navbar_btn ">Contact</a>
                 </li>
             </ul>
         </div>
-        <div class="display_flex pt_5" id="introduction ">
+        <div class="pt_5" id="introduction">
+            <h3>Hi! I Am</h3>
+            <h1 class="text_warning">Luong Thien Toan</h1>
             <div class="introduction_content">
-                <h3>Hi! I Am</h3>
-                <h1 class="text_warning">Luong Thien Toan</h1>
                 <p><br />I'm a student at Tallinn University of Technology (Estonia).
                     Recently, I have decided to finish my thesis online in Vietnam, therefore I came back to Vietnam;
                     and I also
@@ -43,16 +49,18 @@
                     strangers,
                     I am highly confident about my adaptability in various situations.
                 </p>
-            </div>
-            <div class="introduction_avatar">
-                <img id="avatar" src="img/avatar.jpg" alt="thluonavatar">
+
+                <div class="introduction_avatar">
+                    <img id="avatar" src="img/avatar.jpg" alt="thluonavatar">
+                </div>
+
             </div>
         </div>
         <div class="pt_5" id="education">
             <h1 class="text_warning">Education</h1>
-            <div class="pt_3 display_flex space_between">
-                <div class="font_30 text_breeze">Tallinn University of Technology</div>
-                <div class="font_15 text_breeze">2018 - Present</div>
+            <div class="pt_3 education_container">
+                <h3 class="workplace">Tallinn University of Technology</h3>
+                <h3 class="time_period">2018-Present</h3>
             </div>
             <p>Bachelor Degree of Inegrated Engineering</p>
         </div>
@@ -76,9 +84,7 @@
                     <div class="skill background_color_none" id="logo_photoshop"><img src="img/Photoshop.svg"
                             alt="Photoshop"></div>
                 </li>
-                <li>
-                    <div class="skill" id="logo_vim"><img src="img/Vim.svg" alt="Vim"></div>
-                </li>
+                
                 <li>
                     <div class="skill" id="logo_sqlite"><img src="img/SQLite370.svg" alt="SQlite"></div>
                 </li>
@@ -90,7 +96,7 @@
                 </li>
             </ul>
         </div>
-        <div class="pt_5" id="about ">
+        <div class="pt_5" id="about">
             <h1 class="text_warning">
                 About Me
             </h1>
@@ -105,14 +111,14 @@
                 and it was right.
                 <br>
                 Most of my knowledge came from the Internet, I have been learning from famous websites, such as
-                W3School, F8 and a bunch of Youtube tutorials.
+                W3School, F8, GeeksforGeeks and a bunch of Youtube tutorials.
                 <br>
                 At first, it was difficult with Javascript, since its syntax is more flexible than the languages that I
                 had known before (i.e., C,Python,C#).
                 Now, I am quite comfortable with Javascript and also learnt the basic of Vue.
             </p>
         </div>
-        <div class="pt_5" id="experience ">
+        <div class="pt_5" id="experience">
             <h1 class="text_warning">
                 Experience
             </h1>
@@ -129,21 +135,108 @@
                 next step in my career and will happily to be a part of your team. </p>
 
         </div>
-        <div class="pt_5" id="projects ">
+        <div class="pt_5" id="projects">
             <h1 class="text_warning">Some things I've built</h1>
+            <div class="pt_5 project">
+                <div class="project_img">
+                    <img src="img/projects_opencv.png" alt="project opencv">
+                </div>
+                <div class="project_content">
+                    <h3>Color </h3>
+                    <h3>Detection</h3>
+                    <div class="description">
+                        <p>A simple project simulate the situations in the manufacturing
+                            pipeline,
+                            where counting the products could be completed bases on the color difference
+                            via surveillance camera.
+
+                        </p>
+                        <div class="badges pt_3">
+                            <div class="badge">
+                                Python
+                            </div>
+                            <div class="badge">
+                                OpenCV
+                            </div>
+                        </div>
+                        <div class="project_info ">
+                            <a target="_blank" href="https://github.com/thientoan3596/opencv_CourseProject">
+                                <i class="fa-brands fa-github  "></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pt_5 project project_reversed">
+                <div class="project_img">
+                    <img src="img/projects_kpidashboard.png" alt="project kpi dashboard">
+                </div>
+
+                <div class="project_content">
+                    <h3>KPI </h3>
+                    <h3>Dashboard </h3>
+                    <div class="description">
+                        <p>A continuation of the aforementioned project, where importants metrics are monitored and
+                            watched to give in time action.
+                            <br>As a testing project, data was generate randomly at Server Side every minute to simulate
+                            in real application.                         </p>
+                        <div class="badges pt_5">
+                            <div class="badge">Node.js</div>
+                            <div class="badge">Express.js</div>
+                            <div class="badge">Socket.io</div>
+                            <div class="badge">MongoDB</div>
+                            <div class="badge">Javascript</div>
+                            <div class="badge">Chart.js</div>
+                            <div class="badge">Bootstrap</div>
+                            <div class="badge">HTML</div>
+                            <div class="badge">CSS</div>
+                        </div>
+                        <div class="project_info ">
+                            <a target="_blank" href="https://kpidashboard-thluon.loca.lt/">
+                                <i class="fa-solid fa-up-right-from-square "></i></a>
+                            <a target="_blank" href="https://github.com/thientoan3596/kpiDashboard">
+                                <i class="fa-brands fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt_5 project">
+                <div class="project_img">
+                    <img src="img/projects_portfolio.png" alt="project opencv">
+                </div>
+                <div class="project_content">
+                    <h3>Portfolio</h3>
+                    <div class="description">
+                        <p>A single page website to introduce myself. This project is using Vannilla Javascript without
+                            any
+                            library and HTML, CSS. </p>
+                        <div class="badges pt_5">
+                            <div class="badge">Javascript</div>
+                            <div class="badge">HTML</div>
+                            <div class="badge">CSS</div>
+                        </div>
+                        <div class="project_info ">
+                            <a target="_blank" href="https://github.com/thientoan3596/portfolio">
+                                <i class="fa-brands fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="pt_5" id="contact">
-            <h1 class=" text_warning ">
+            <a href="mailto:toanlt3596@gmail.com">
+            <h1 class=" text_warning pt_5 ">
                 Get In Touch Now
             </h1>
-        </div>
+            </a>
+       </div>
         <div class=" leftside_bar">
             <a href="https://www.facebook.com/lliioToiill/" target="_blank"><i
                     class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="https://github.com/thientoan3596" target="_blank"><i class="fa-brands fa-github fa-2x "
-                    style="color: brown;"></i></a>
-            <div class="vertical_line"></div>
+            <a href="https://github.com/thientoan3596" target="_blank"><i class="fa-brands fa-github fa-2x "></i></a>
+            <div class=" vertical_line">
+            </div>
         </div>
         <div class="rightside_bar">
             <a href="mailto:toanlt3596@gmail.com">toanlt3596@gmail.com</a>
@@ -153,7 +246,7 @@
     </div>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script src="index.js"></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>
